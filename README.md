@@ -1,4 +1,4 @@
-                                                                    TODO-APPLICATION
+                                                          TODO-LIST-APPLICATION
 
 This application is built to create a list of todos with task name and description and displays details when a todo is created/updated. User can add a todo, edit/update todo and delete todo.
 
@@ -26,10 +26,9 @@ Instructions for building and running the application –
 
 1.	Back End – Download the source code of the back-end application and import the project in IDE of your choice. Go to project location where pom.xml lives (/TodoList-BackEnd-master) and build the application using mvn clean install (Download and install maven if not already for building the back end application). After the application is build, run the application as “Run as Spring Boot project”. After application has started, hit REST end point http://localhost:8081/todos/v1/getAll to verify that it returns a blank array which means there are no entries yet in the database but the request is completed OK.
 
-2.	Front End – Download the source code of the front-end project. Download and Install Visual studio code IDE if not present already. Open VS code and go to File -> Open Folder and go to the location where front-end code is downloaded and select the folder todo-list-master. Install Angular 8 if not already and use command npm install to download the project dependencies. After installation of project dependencies, use command npm start to start the front-end application. After start of the application hit URL http://localhost:4200/ to see the home page of the application. Make sure the back end is running or the war file is deployed to an external server when creating/editing/deleting TODOs.
+2.	Front End – Download the source code of the front-end project. Download and Install Visual studio code IDE if not present already. Open VS code and go to File -> Open Folder and go to the location where front-end code is downloaded and select the folder TodoList-FrontEnd-master. Install Angular 8 if not already and use command npm install to download the project dependencies. After installation of project dependencies, use command npm start to start the front-end application. After start of the application hit URL http://localhost:4200/ to see the home page of the application. Make sure the back end is running or the war file is deployed to an external server when creating/editing/deleting TODOs.
 
 3.	Accessing the database console – H2 database is used for persisting values. After the back-end server is up either by running the application via an IDE or by deploying the application war available at (TodoList-BackEnd-master/target/ TodoList-0.0.1-SNAPSHOT.war)  in an external server (Tomcat). H2 console will be available at localhost:8081/h2-console
-
 
 Testing the REST endpoints using a web browser –
 1.	Get All Todos - http://localhost:8081/todos/v1/getAll - Use this GET end point to see the no of todo objects created in the database.
