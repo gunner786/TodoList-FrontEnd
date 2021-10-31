@@ -31,7 +31,7 @@ Instructions for building and running the application –
 3.	Accessing the database console – H2 database is used for persisting values. After the back-end server is up either by running the application via an IDE or by deploying the application war available at (TodoList-BackEnd-master/target/ TodoList-0.0.1-SNAPSHOT.war)  in an external server (Tomcat). H2 console will be available at localhost:8081/h2-console
 
 
-            Testing the REST endpoints using a web browser –
+Testing the REST endpoints using a web browser –
 1.	Get All Todos - http://localhost:8081/todos/v1/getAll - Use this GET end point to see the no of todo objects created in the database.
 2.	Get Todo based in ID (PK) - http://localhost:8081/todos/v1/edit/?id=1 – Use this GET end point to see single Todo based on the id. The id is incremental, as the todos get created ids will be incremented by 1.
 3.	To test POST end points, Postman can be used.
@@ -45,4 +45,3 @@ The application can be extended by following ways if given more time :-
 3.	Use spring security for authentication and authorization of the application and making it more secure.
 4.	Add unit test cases in the front -end application (I had to spend some extra time in the front end development pertaining to some issues due to which could not complete the test cases).  
 5.	Create a functionality to add Completion Date of a task and send an automated email to the user when the completion date is less than 24 hours .
-![image](https://user-images.githubusercontent.com/48382619/139604806-87833053-02c8-40e8-a164-9955bb0d178d.png)
