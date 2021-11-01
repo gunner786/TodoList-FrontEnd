@@ -35,6 +35,8 @@ Testing the REST endpoints using a web browser –
 2.	Get Todo based in ID (PK) - http://localhost:8081/todos/v1/edit/?id=1 – Use this GET end point to see single Todo based on the id. The id is incremental, as the todos get created ids will be incremented by 1.
 3.	To test POST end points, Postman can be used.
 
+PS – There is a small issue with the application. After user creates the first todo and the route is navigated to TodoComponent (HomePage), the taskname and description are not displayed. The page needs to be refreshed forcefully to see the tasks. When user creates the second todo this issue does not come and after routing back to TodoComponent the user can see all their tasks. Was not able to resolve this issue due to time constraint.
+
 The code coverage of the application is 92% and can be found at location - / TodoList-BackEnd-master/target/site/jacoco/index.html.
 
 The application can be extended by following ways if given more time :-
